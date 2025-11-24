@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet</title>
+    <!-- Font: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        /* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background: #2B2B2B;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding: 24px 0;
+  background: transparent;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.logo i {
+  color: #A259FF;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  transform: scale(0.95);
+}
+
+.btn-signup {
+  background: #A259FF;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-signup:hover {
+  background: #8e44ad;
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 999;
+}
+
+.mobile-nav {
+  background: #1E1B2E;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-nav .btn-signup {
+  margin: 20px auto;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .header {
+        padding: 10px 10px;
+    }
+}
+
+
+
+/* ---------- SECTION ---------- */
+    .connect-wallet-section {
+      padding:80px 0;
+    }
+    .container {
+      display:flex;
+      align-items:center;
+      gap:120px;
+      flex-wrap:wrap;
+    }
+
+    .hero-img {
+      flex:1;
+      min-width:300px;
+    }
+    .hero-img img {
+      width:100%;
+      height:auto;
+      border-radius:20px;
+      display:block;
+    }
+
+    /* Matn va buttonlar */
+    .wallet-content {
+      flex:1;
+      min-width:300px;
+      max-width:460px;
+    }
+
+    .wallet-content h1 {
+      font-size:51px;
+      font-weight:700;
+      line-height:1.1;
+      margin-bottom:10px;
+    }
+
+    .wallet-content p {
+      font-size:22px;
+      color:#CCC;
+      line-height:1.4;
+      margin-bottom:40px;
+    }
+
+    .wallet-btn {
+      display:flex;
+      align-items:center;
+      gap:16px;
+      width:80%;
+      padding:18px 24px;
+      background:#3B3B3B;
+      border:2px solid transparent;
+      border-radius:20px;
+      color:#FFF;
+      font-size:18px;
+      font-weight:600;
+      text-decoration:none;
+      margin-bottom:20px;
+      transition:transform .2s, border .2s;
+    }
+
+    .wallet-btn:hover {
+      transform:scale(.98);
+      border-color:#A259FF;
+    }
+
+    .wallet-btn img {
+      width:32px;
+      height:32px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width:1024px) {
+      .connect-wallet-section { gap:80px; }
+    }
+    @media (max-width:768px) {
+      .connect-wallet-section {
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+        padding:60px 0;
+      }
+      .wallet-content h1 { font-size:38px; }
+      .wallet-content p  { font-size:18px; }
+    }
+    @media (max-width:480px) {
+      .wallet-content h1 { font-size:32px; }
+      .wallet-content p  { font-size:16px; }
+      .wallet-btn { padding:16px 20px; width: 60%; margin: 20px auto; border: 1px solid #A259FF;}
+      .wallet-btn img { width:28px; height:28px; }
+      .hero-img img {border-radius: 0; height: 40vh; margin-top: -50px; margin-bottom: -80px;}
+    }
+
+    /* FOOTER SECTION */
+.footer {
+  background: #3B3B3B;
+  padding: 80px 0 40px;
+  color: #CCCCCC;
+  font-size: 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* Logo Column */
+.logo-col .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.logo-col p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.logo-col h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background: #2B2B2B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background: #A259FF;
+  transform: translateY(-3px);
+}
+
+/* Links Column */
+.footer-col h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin-bottom: 16px;
+}
+.footer-col ul a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-col ul a:hover {
+  color: #A259FF;
+}
+
+/* Newsletter Column */
+.newsletter-col form {
+  display: flex;
+  gap: 0;
+  margin-top: 20px;
+}
+.newsletter-col input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background: #FFFFFF;
+  color: #2B2B2B;
+  font-size: 16px;
+  outline: none;
+}
+.newsletter-col input::placeholder {
+  color: #A0A0A0;
+}
+.newsletter-col button {
+  background: #A259FF;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 0 20px 20px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.newsletter-col button:hover {
+  background: #8e44ad;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: -150px;
+  border-top: 1px solid #4B4B4B;
+  padding-top: 24px;
+  text-align: center;
+  width: 100%;
+  
+  font-size: 14px;
+  color: #858584;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .logo-col .logo {
+    justify-content: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .newsletter-col form {
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 30px;
+  }
+  .footer-grid {
+    text-align: start;
+    padding: 0 70px;
+    gap: 32px;
+  }
+  .social-icons {
+    justify-content: start;
+  }
+  .footer-col h3 {
+    font-size: 20px;
+  }
+  .newsletter-col form {
+    flex-direction: column;
+  }
+  .newsletter-col input,
+  .newsletter-col button {
+    border-radius: 20px;
+  }
+  .newsletter-col button {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+  .logo-col .logo {
+    font-size: 20px;
+  }
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .newsletter-col input,
+  .newsletter-col button {
+    padding: 14px 18px;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">
+        <i class="fa-solid fa-store logo-img"></i>
+        <span>NFT Marketplace</span>
+      </div>
+      </a>
+      <nav class="nav">
+        <a href="marketplace.html">Marketplace</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="wallet.html" id="connect-wallet">Connect a wallet</a>
+        <a href="register.html" class="btn-signup">
+          <i class="fas fa-user"></i> Sign Up
+        </a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav">
+      <a href="marketplace.html">Marketplace</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="wallet.html">Connect a wallet</a>
+      <a href="register.html" class="btn-signup">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- SECTION -->
+
+  <section class="connect-wallet-section">
+    <div class="container">
+      <div class="hero-img">
+        <img src="ImagePlaceholder1.png" alt="Space NFT Scene">
+      </div>
+
+      <!-- Matn va tugmalar -->
+      <div class="wallet-content">
+        <h1>Connect Wallet</h1>
+        <p>Choose a wallet you want to connect.<br>There are several wallet providers.</p>
+
+        <!-- Metamask -->
+        <a href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples" class="wallet-btn">
+          <img src="Metamask.png" alt="Metamask"> Metamask
+        </a>
+
+        <!-- Wallet Connect -->
+        <a href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples" class="wallet-btn">
+          <img src="WalletConnect.png" alt="Wallet Connect"> Wallet Connect
+        </a>
+
+        <!-- Coinbase -->
+        <a href="https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-nftmarket&utm_medium=figma-samples" class="wallet-btn">
+          <img src="Coinbase.png" alt="Coinbase"> Coinbase
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <div class="logo">
+          <i class="fa-solid fa-store logo-img"></i>
+          <span class="logo-text">NFT Marketplace</span>
+        </div>
+        <p>NFT marketplace UI created with Anima for Figma.</p>
+        <h4>Join our community</h4>
+        <div class="social-icons">
+          <a href="https://discord.com/channels/@xurshid110" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/@computerhacks71" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/Xurshidbek_07" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/_xurshidbek_off/?next=%2F&hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="wallet.html">Connect a wallet</a></li>
+        </ul>
+      </div>
+
+      <!-- Join Newsletter -->
+      <div class="footer-col newsletter-col">
+        <h3>Join Our Weekly Digest</h3>
+        <p>Get exclusive promotions & updates straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email here" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>© NFT Market. Use this template freely.</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Mobile menu toggle
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+  document.querySelector('.mobile-nav-overlay').style.display = 'block';
+});
+
+document.querySelector('.mobile-nav-overlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.style.display = 'none';
+  }
+});
+
+// NFT animatsiyasi – CSS orqali
+console.log("Responsive NFT Marketplace ishga tushdi!");
+  </script>
+</body>
+</html>

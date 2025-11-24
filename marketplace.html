@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse-Marketplace</title>
+    <!-- Font: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">
+        <i class="fa-solid fa-store logo-img"></i>
+        <span>NFT Marketplace</span>
+      </div>
+      </a>
+      <nav class="nav">
+        <a href="marketplace.html">Marketplace</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="wallet.html" id="connect-wallet">Connect a wallet</a>
+        <a href="register.html" class="btn-signup">
+          <i class="fas fa-user"></i> Sign Up
+        </a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav">
+      <a href="marketplace.html">Marketplace</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="wallet.html">Connect a wallet</a>
+      <a href="register.html" class="btn-signup">Sign Up</a>
+    </div>
+  </div>
+
+
+  <!-- === BROWSE MARKETPLACE PAGE – MAIN SECTION === -->
+<section class="marketplace-page">
+  <div class="container">
+
+    <!-- Hero Title + Search -->
+    <div class="marketplace-header">
+      <h1 class="marketplace-title">Browse Marketplace</h1>
+      <p class="marketplace-subtitle">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search your favourite NFTs" class="search-input">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Tabs (NFTs / Collections) -->
+    <div class="marketplace-tabs">
+      <div class="container">
+        <div class="tab-m active" data-tab-m="nfts">
+        NFTs <span class="tab-count-m">302</span>
+      </div>
+      <div class="tab-m" data-tab-m="collections">
+        Collections <span class="tab-count-m">67</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Tabs Wrapper – Instagram style slide -->
+    <div class="marketplace-tabs-wrapper">
+
+      <!-- NFTs Tab Content -->
+      <div id="nfts" class="marketplace-tab-content active" data-initial="true">
+        <div class="container">
+
+          <!-- NFTs Grid -->
+          <div class="nfts-grid">
+            <!-- NFT 1 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="Image.png" alt="Distant Galaxy" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Distant Galaxy</h4>
+                <div class="author">
+                  <img src="Asset1229.png" alt="Animakid">
+                  <span>Animakid</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 2 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="Image1.png" alt="Life On Edena" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Life On Edena</h4>
+                <div class="author">
+                  <img src="avatar3.png" alt="Animakid">
+                  <span>BeKind2Robots</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 3 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="Image2.png" alt="AstroFiction" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>AstroFiction</h4>
+                <div class="author">
+                  <img src="avatar3.png" alt="Animakid">
+                  <span>BeKind2Robots</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 4 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard1.png" alt="Distant Galaxy" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>CryptoCity</h4>
+                <div class="author">
+                  <img src="Asset1225.png" alt="Animakid">
+                  <span>Mr Fox</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 5 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard2.png" alt="Life On Edena" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>ColorFulDog 0524</h4>
+                <div class="author">
+                  <img src="Asset12210.png" alt="Animakid">
+                  <span>Keepitreal</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 6 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard3.png" alt="AstroFiction" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Space Tales</h4>
+                <div class="author">
+                  <img src="Asset1227.png" alt="Animakid">
+                  <span>Robotico</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collections Tab Content -->
+      <div id="collections" class="marketplace-tab-content">
+        <div class="container">
+
+          <!-- NFTs Grid -->
+          <div class="nfts-grid">
+            <!-- NFT 1 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard6.png" alt="Distant Galaxy" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Ice Cream Ape</h4>
+                <div class="author">
+                  <img src="Asset1229.png" alt="Animakid">
+                  <span>Animakid</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 2 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard3.png" alt="Life On Edena" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Space Tales</h4>
+                <div class="author">
+                  <img src="Asset1222.png" alt="Animakid">
+                  <span>Gravity One</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 3 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard5.png" alt="AstroFiction" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Dancing Robots 0987</h4>
+                <div class="author">
+                  <img src="Asset1223.png" alt="Animakid">
+                  <span>Juanie</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 4 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard1.png" alt="Distant Galaxy" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>CryptoCity</h4>
+                <div class="author">
+                  <img src="Asset1229.png" alt="Animakid">
+                  <span>Animakid</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 5 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard2.png" alt="Life On Edena" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>ColorFulDog 0524</h4>
+                <div class="author">
+                  <img src="Asset1229.png" alt="Animakid">
+                  <span>Animakid</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NFT 6 -->
+            <div class="nft-card">
+              <div class="image-wrapper">
+                <img src="profilecard4.png" alt="AstroFiction" class="nft-image">
+              </div>
+              <div class="nft-info">
+                <h4>Cherry Blossom Girl 037</h4>
+                <div class="author">
+                  <img src="Asset1226.png" alt="Animakid">
+                  <span>Shroomie</span>
+                </div>
+                <div class="price-bid">
+                  <div class="price">
+                    <p>Price</p>
+                    <p class="value">1.63 ETH</p>
+                  </div>
+                  <div class="bid">
+                    <p>Highest Bid</p>
+                    <p class="value">0.33 wETH</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+  <!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <div class="logo">
+          <i class="fa-solid fa-store logo-img"></i>
+          <span class="logo-text">NFT Marketplace</span>
+        </div>
+        <p>NFT marketplace UI created with Anima for Figma.</p>
+        <h4>Join our community</h4>
+        <div class="social-icons">
+          <a href="https://discord.com/channels/@me" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/@computerhacks71" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/Xurshidbek_07" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/_xurshidbek_off/?next=%2F&hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="wallet.html">Connect a wallet</a></li>
+        </ul>
+      </div>
+
+      <!-- Join Newsletter -->
+      <div class="footer-col newsletter-col">
+        <h3>Join Our Weekly Digest</h3>
+        <p>Get exclusive promotions & updates straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email here" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>© NFT Market. Use this template freely.</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Mobile menu toggle
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+  document.querySelector('.mobile-nav-overlay').style.display = 'block';
+});
+
+document.querySelector('.mobile-nav-overlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.style.display = 'none';
+  }
+});
+
+
+// Instagram kabi tab slide (NFTs ↔ Collections)
+document.querySelectorAll('.tab-m').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tabM;
+    const targetContent = document.getElementById(target);
+    const currentContent = document.querySelector('.marketplace-tab-content.active');
+
+    if (!targetContent || currentContent.id === target) return;
+
+    // Active tab almashtirish
+    document.querySelector('.tab-m.active').classList.remove('active');
+    tab.classList.add('active');
+
+    // Chiqish animatsiyasi
+    currentContent.classList.add('exiting');
+    currentContent.classList.remove('active');
+
+    // Kirish animatsiyasi
+    targetContent.classList.add('active');
+    targetContent.classList.remove('exiting');
+
+    // Tozalash
+    setTimeout(() => {
+      document.querySelectorAll('.marketplace-tab-content').forEach(c => {
+        c.classList.remove('exiting');
+      });
+    }, 400);
+  });
+});
+
+// Birinchi yuklanishda animatsiya bo‘lmasin
+document.addEventListener('DOMContentLoaded', () => {
+  const first = document.querySelector('.marketplace-tab-content.active');
+  if (first) {
+    first.style.transition = 'none';
+    requestAnimationFrame(() => {
+      first.style.transition = 'transform 0.38s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.38s cubic-bezier(0.22, 0.61, 0.36, 1)';
+    });
+  }
+});
+
+// NFT animatsiyasi – CSS orqali
+console.log("Responsive NFT Marketplace ishga tushdi!");
+  </script>
+</body>
+</html>

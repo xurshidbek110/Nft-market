@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NFT-marketplace</title>
+  
+  <!-- Font: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">
+        <i class="fa-solid fa-store logo-img"></i>
+        <span>NFT Marketplace</span>
+      </div>
+      </a>
+      <nav class="nav">
+        <a href="marketplace.html">Marketplace</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="wallet.html" id="connect-wallet">Connect a wallet</a>
+        <a href="register.html" class="btn-signup">
+          <i class="fas fa-user"></i> Sign Up
+        </a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav">
+      <a href="marketplace.html">Marketplace</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="wallet.html">Connect a wallet</a>
+      <a href="register.html" class="btn-signup">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <h1>Discover <br> Digital Art & <br> Collect NFTs</h1>
+          <p>NFT Marketplace UI Created With Anima For Figma. Collect, Buy And Sell Art From More Than 20k NFT Artists.</p>
+          <a href="register.html" style="text-decoration: none;">
+            <button class="btn-get-started">
+            <i class="fas fa-rocket"></i> Get Started
+          </button>
+          </a>
+
+          <div class="stats">
+            <div class="stat">
+              <h3>240k<span>+</span></h3>
+              <p>Total Sale</p>
+            </div>
+            <div class="stat">
+              <h3>100k<span>+</span></h3>
+              <p>Auctions</p>
+            </div>
+            <div class="stat">
+              <h3>240k<span>+</span></h3>
+              <p>Artists </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Animated NFT Card -->
+        <a href="profile.html" style="text-decoration: none;">
+          <div class="hero-nft-card">
+          <div class="nft-image-container">
+            <img src="animakidhome.png" alt="NFT" class="nft-moving-image" id="moving-nft">
+          </div>
+          <div class="nft-info">
+            <h4>Space Walking</h4>
+            <div class="author">
+              <div class="author-avatar">
+                <img src="Avatar.png" alt="Author">
+              </div>
+              <span>animakid</span>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Collection -->
+  <section class="trending">
+    <div class="container">
+      <h2>Trending Collection</h2>
+      <p>Checkout Our Weekly Updated Trending Collection.</p>
+      <div class="collections-grid">
+        <!-- 1-karta -->
+        <div class="collection-card">
+          <a href="orbitians.html" style="text-decoration: none;">
+            <div class="main-image">
+            <img src="primaryphotoplaceholder.png" alt="Main">
+          </div>
+          <div class="thumbnails">
+            <img src="secondaryphotoplaceholder.png" alt="Thumb 1">
+            <img src="secondaryphotoplaceholder1.png" alt="Thumb 2">
+            <div class="more">1025+</div>
+          </div>
+          </a>
+          <h4>DSGN Animals</h4>
+          <div class="creator">
+            <img src="avatar1.png" alt="Creator">
+            <span>MrFox</span>
+          </div>
+        </div>
+        <!-- 2-karta -->
+        <div class="collection-card1">
+          <a href="orbitians.html" style="text-decoration: none;">
+            <div class="main-image">
+            <img src="primaryphotoplaceholder1.png" alt="Main">
+          </div>
+          <div class="thumbnails">
+            <img src="primaryphotoplaceholder1.png" alt="Thumb 1">
+            <img src="primaryphotoplaceholder1.png" alt="Thumb 2">
+            <div class="more">1025+</div>
+          </div>
+          </a>
+          <h4>Magic Mushrooms</h4>
+          <div class="creator">
+            <img src="avatar2.png" alt="Creator">
+            <span>Shroomie</span>
+          </div>
+        </div>
+        <!-- 3-karta -->
+        <div class="collection-card2">
+          <a href="orbitians.html" style="text-decoration: none;">
+            <div class="main-image">
+            <img src="primaryphotoplaceholder2.png" alt="Main">
+          </div>
+          <div class="thumbnails">
+            <img src="primaryphotoplaceholder2.png" alt="Thumb 1">
+            <img src="primaryphotoplaceholder2.png" alt="Thumb 2">
+            <div class="more">1025+</div>
+          </div>
+          </a>
+          <h4>Disco Machines</h4>
+          <div class="creator">
+            <img src="avatar3.png" alt="Creator">
+            <span>BeKind2Robots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP CREATORS SECTION -->
+  <section class="top-creators">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header">
+        <div class="title">
+          <h2>Top Creators</h2>
+          <p>Checkout Top Rated Creators On The NFT Marketplace</p>
+        </div>
+        <a href="rankings.html" class="btn-view-rankings"> <i class="fas fa-rocket"></i>
+          View Rankings
+        </a>
+      </div>
+
+      <!-- Creators Grid -->
+      <div class="creators-grid">
+        <!-- 1 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">1</div>
+          <img src="Asset122.png" alt="Keepitreal" class="avatar">
+          </div>
+          <div>
+            <h4>Keepitreal</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 2 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">2</div>
+          <img src="Asset1221.png" alt="DigiLab" class="avatar">
+          </div>
+          <div>
+            <h4>DigiLab</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 3 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">3</div>
+          <img src="Asset1222.png" alt="GravityOne" class="avatar">
+          </div>
+          <div>
+            <h4>GravityOne</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 4 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">4</div>
+          <img src="Asset1223.png" alt="Juanie" class="avatar">
+          </div>
+          <div>
+            <h4>Juanie</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 5 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">5</div>
+          <img src="Asset1224.png" alt="BlueWhale" class="avatar">
+          </div>
+          <div>
+            <h4>BlueWhale</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 6 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">6</div>
+          <img src="Asset1225.png" alt="Mr Fox" class="avatar">
+          </div>
+          <div>
+            <h4>Mr Fox</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 7 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">7</div>
+          <img src="Asset1226.png" alt="Shroomie" class="avatar">
+          </div>
+          <div>
+            <h4>Shroomie</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 8 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">8</div>
+          <img src="Asset1227.png" alt="Robotica" class="avatar">
+          </div>
+          <div>
+            <h4>Robotica</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 9 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">9</div>
+          <img src="Asset1228.png" alt="RustyRobot" class="avatar">
+          </div>
+          <div>
+            <h4>RustyRobot</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 10 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">10</div>
+          <img src="Asset1229.png" alt="Animakid" class="avatar">
+          </div>
+          <div>
+            <h4>Animakid</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 11 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">11</div>
+          <img src="Asset12210.png" alt="Dotgu" class="avatar">
+          </div>
+          <div>
+            <h4>Dotgu</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+        <!-- 12 -->
+        <a href="profile.html">
+          <div class="creator-card">
+          <div>
+            <div class="rank">12</div>
+          <img src="Asset12211.png" alt="Ghiblier" class="avatar">
+          </div>
+          <div>
+            <h4>Ghiblier</h4>
+          <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BROWSE CATEGORIES SECTION -->
+  <section class="browse-categories">
+    <div class="container">
+      <h2>Browse Categories</h2>
+
+      <div class="categories-grid">
+        <!-- 1. Art -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/art.jpg');">
+            <img src="Photo-Icon.png" alt="Art" class="icon">
+          </div>
+          <h4 class="label">Art</h4>
+        </div>
+        </a>
+
+        <!-- 2. Collectibles -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/collectibles.jpg');">
+            <img src="Photo-Icon1.png" alt="Collectibles" class="icon">
+          </div>
+          <h4 class="label">Collectibles</h4>
+        </div>
+        </a>
+
+        <!-- 3. Music -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/music.jpg');">
+            <img src="Photo-Icon2.png" alt="Music" class="icon">
+          </div>
+          <h4 class="label">Music</h4>
+        </div>
+        </a>
+
+        <!-- 4. Photography -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/photography.jpg');">
+            <img src="Photo-Icon3.png" alt="Photography" class="icon">
+          </div>
+          <h4 class="label">Photography</h4>
+        </div>
+        </a>
+
+        <!-- 5. Video -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/video.jpg');">
+            <img src="Photo-Icon4.png" alt="Video" class="icon">
+          </div>
+          <h4 class="label">Video</h4>
+        </div>
+        </a>
+
+        <!-- 6. Utility -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/utility.jpg');">
+            <img src="Photo-Icon5.png" alt="Utility" class="icon">
+          </div>
+          <h4 class="label">Utility</h4>
+        </div>
+        </a>
+
+        <!-- 7. Sport -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/sport.jpg');">
+            <img src="Photo-Icon6.png" alt="Sport" class="icon">
+          </div>
+          <h4 class="label">Sport</h4>
+        </div>
+        </a>
+
+        <!-- 8. Virtual Worlds -->
+        <a href="marketplace.html">
+          <div class="category-card">
+          <div class="image-wrapper" style="background-image: url('assets/categories/virtual-worlds.jpg');">
+            <img src="Photo-Icon7.png" alt="Virtual Worlds" class="icon">
+          </div>
+          <h4 class="label">Virtual Worlds</h4>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DISCOVER MORE NFTs SECTION -->
+  <section class="discover-nfts">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header">
+        <div class="title">
+          <h2>Discover More NFTs</h2>
+          <p>Explore New Trending NFTs</p>
+        </div>
+        <a href="marketplace.html" class="btn-see-all"> <i class="fa-regular fa-eye"></i>
+          See All
+        </a>
+      </div>
+
+      <!-- NFTs Grid -->
+      <div class="nfts-grid">
+        <!-- NFT 1 -->
+        <a href="orbitians.html">
+          <div class="nft-card">
+          <div class="image-wrapper">
+            <img src="Image.png" alt="Distant Galaxy" class="nft-image">
+          </div>
+          <div class="nft-info">
+            <h4>Distant Galaxy</h4>
+            <div class="author">
+              <img src="Asset1222.png" alt="MoonDancer">
+              <span>MoonDancer</span>
+            </div>
+            <div class="price-bid">
+              <div class="price">
+                <p>Price</p>
+                <p class="value">1.63 ETH</p>
+              </div>
+              <div class="bid">
+                <p>Highest Bid</p>
+                <p class="value">0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <!-- NFT 2 -->
+        <a href="orbitians.html">
+          <div class="nft-card">
+          <div class="image-wrapper">
+            <img src="Image1.png" alt="Life On Edena" class="nft-image">
+          </div>
+          <div class="nft-info">
+            <h4>Life On Edena</h4>
+            <div class="author">
+              <img src="Asset1224.png" alt="NebulaKid">
+              <span>NebulaKid</span>
+            </div>
+            <div class="price-bid">
+              <div class="price">
+                <p>Price</p>
+                <p class="value">1.63 ETH</p>
+              </div>
+              <div class="bid">
+                <p>Highest Bid</p>
+                <p class="value">0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <!-- NFT 3 -->
+        <a href="orbitians.html">
+          <div class="nft-card">
+          <div class="image-wrapper">
+            <img src="Image2.png" alt="AstroFiction" class="nft-image">
+          </div>
+          <div class="nft-info">
+            <h4>AstroFiction</h4>
+            <div class="author">
+              <img src="Asset12210.png" alt="Spaceone">
+              <span>Spaceone</span>
+            </div>
+            <div class="price-bid">
+              <div class="price">
+                <p>Price</p>
+                <p class="value">1.63 ETH</p>
+              </div>
+              <div class="bid">
+                <p>Highest Bid</p>
+                <p class="value">0.33 wETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAGIC MUSHROOMS SECTION -->
+<section class="magic-mushrooms">
+  <div class="container">
+    <div class="content">
+
+      <!-- Creator Badge -->
+      <div class="creator-badge-container">
+        <div class="creator-badge">
+        <img src="Asset1226.png" alt="Shroomie" class="avatar">
+        <span>Shroomie</span>
+      </div>
+
+      <!-- Title -->
+      <h1>Magic Mushrooms</h1>
+
+      <!-- Button -->
+      <a href="orbitians.html" class="btn-see-nft">
+        See NFT
+      </a>
+      </div>
+
+      <!-- Timer -->
+      <div class="timer-card">
+        <p>Auction ends in:</p>
+        <div class="timer" id="timer">
+          <span class="time">71</span> :
+          <span class="time">59</span> :
+          <span class="time">59</span>
+        </div>
+        <div class="labels">
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS SECTION -->
+<section class="how-it-works">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Find Out How To Get Started</p>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="icon-placeholder" style="background-image: url('Icon.png');"></div>
+        <div class="step-part">
+          <h3>Setup Your Wallet</h3>
+        <p>Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="icon-placeholder" style="background-image: url('Icon1.png');"></div>
+        <div class="step-part">
+          <h3>Create Collection</h3>
+        <p>Upload your work and setup your collection. Add a description, social links and floor price.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="icon-placeholder" style="background-image: url('Icon2.png');"></div>
+        <div class="step-part">
+          <h3>Start Earning</h3>
+        <p>Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SUBSCRIBE SECTION -->
+<section class="subscribe">
+  <div class="container">
+    <div class="subscribe-grid">
+
+      <!-- Left: Image -->
+      <div class="image-card">
+        <div class="image-placeholder" style="background-image: url('Photo.png');"></div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="content-card">
+        <h2>Join Our Weekly Digest</h2>
+        <p>Get Exclusive Promotions & Updates Straight To Your Inbox.</p>
+
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email here" required>
+          <button type="submit"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <div class="logo">
+          <i class="fa-solid fa-store logo-img"></i>
+          <span class="logo-text">NFT Marketplace</span>
+        </div>
+        <p>NFT marketplace UI created with Anima for Figma.</p>
+        <h4>Join our community</h4>
+        <div class="social-icons">
+          <a href="https://discord.com/channels/@xurshid110" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/@computerhacks71" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/Xurshidbek_07" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/_xurshidbek_off/?next=%2F&hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          <li><a href="wallet.html">Connect a wallet</a></li>
+        </ul>
+      </div>
+
+      <!-- Join Newsletter -->
+      <div class="footer-col newsletter-col">
+        <h3>Join Our Weekly Digest</h3>
+        <p>Get exclusive promotions & updates straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email here" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>© NFT Market. Use this template freely.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Marketplace - Rankings</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="rankings.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-store"></i>
+        <span>NFT Marketplace</span>
+      </a>
+      <nav class="nav">
+        <a href="marketplace.html">Marketplace</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="wallet.html">Connect a wallet</a>
+        <a href="register.html" class="btn-signup">
+          <i class="fas fa-user"></i> Sign Up
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-nav-overlay" id="mobileMenu" onclick="closeMobileMenu(event)">
+    <div class="mobile-nav">
+      <a href="marketplace.html">Marketplace</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="wallet.html">Connect a wallet</a>
+      <a href="register.html" class="btn-signup">
+        <i class="fas fa-user"></i> Sign Up
+      </a>
+    </div>
+  </div>
+
+ <section class="top-creators">
+  <div class="container">
+
+    <h2 class="section-title">Top Creators</h2>
+    <p class="section-desc">Check out top ranking NFT artists on the NFT Marketplace.</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="today">Today</button>
+      <button class="tab-btn" data-tab="week">This Week</button>
+      <button class="tab-btn" data-tab="month">This Month</button>
+      <button class="tab-btn" data-tab="alltime">All Time</button>
+    </div>
+
+    <!-- Today jadvali -->
+    <div id="today" class="creators-table active">
+      <div class="table-header">
+        <div>#</div>
+        <div>Artist</div>
+        <div>Change</div>
+        <div>NFTs Sold</div>
+        <div>Volume</div>
+      </div>
+
+      <!-- 1 -->
+      <div class="creator-row">
+        <div class="rank">1</div>
+        <div class="artist-info">
+          <img src="Asset122.png" alt="" class="avatar">
+          <div class="artist-name">Jaydon Ekstrom</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 2 -->
+      <div class="creator-row">
+        <div class="rank">2</div>
+        <div class="artist-info">
+          <img src="Asset1221.png" alt="" class="avatar">
+          <div class="artist-name">Ruben Carder</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 3 -->
+       <div class="creator-row">
+        <div class="rank">3</div>
+        <div class="artist-info">
+          <img src="Asset1222.png" alt="" class="avatar">
+          <div class="artist-name">Gravity One</div>
+        </div>
+        <div class="change">+1.56%</div>
+        <div class="nfts-sold">594</div>
+        <div class="volume">12.6 ETH</div>
+      </div>
+
+      <!-- 4 -->
+       <div class="creator-row">
+        <div class="rank">4</div>
+        <div class="artist-info">
+          <img src="Asset1223.png" alt="" class="avatar">
+          <div class="artist-name">Juanie</div>
+        </div>
+        <div class="change">+1.32%</div>
+        <div class="nfts-sold">605</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 5 -->
+       <div class="creator-row">
+        <div class="rank">5</div>
+        <div class="artist-info">
+          <img src="Asset1224.png" alt="" class="avatar">
+          <div class="artist-name">BlueWhale</div>
+        </div>
+        <div class="change">+0.96%</div>
+        <div class="nfts-sold">723</div>
+        <div class="volume">15.7 ETH</div>
+      </div>
+
+      <!-- 6 -->
+       <div class="creator-row">
+        <div class="rank">6</div>
+        <div class="artist-info">
+          <img src="Asset1225.png" alt="" class="avatar">
+          <div class="artist-name">Mr Fox</div>
+        </div>
+        <div class="change">+1.96%</div>
+        <div class="nfts-sold">838</div>
+        <div class="volume">17.1 ETH</div>
+      </div>
+
+      <!-- 7 -->
+       <div class="creator-row">
+        <div class="rank">7</div>
+        <div class="artist-info">
+          <img src="Asset1226.png" alt="" class="avatar">
+          <div class="artist-name">Shroomie</div>
+        </div>
+        <div class="change">+1.69%</div>
+        <div class="nfts-sold">660</div>
+        <div class="volume">13.4 ETH</div>
+      </div>
+
+      <!-- 8 -->
+       <div class="creator-row">
+        <div class="rank">8</div>
+        <div class="artist-info">
+          <img src="Asset1227.png" alt="" class="avatar">
+          <div class="artist-name">Robotica</div>
+        </div>
+        <div class="change">+2.73%</div>
+        <div class="nfts-sold">960</div>
+        <div class="volume">16.2 ETH</div>
+      </div>
+
+      <!-- 9 -->
+       <div class="creator-row">
+        <div class="rank">9</div>
+        <div class="artist-info">
+          <img src="Asset1228.png" alt="" class="avatar">
+          <div class="artist-name">RustyRobot</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 10 -->
+       <div class="creator-row">
+        <div class="rank">10</div>
+        <div class="artist-info">
+          <img src="Asset1229.png" alt="" class="avatar">
+          <div class="artist-name">Animakid</div>
+        </div>
+        <div class="change">+3.77%</div>
+        <div class="nfts-sold">724</div>
+        <div class="volume">32.8 ETH</div>
+      </div>
+
+      <!-- 11 -->
+       <div class="creator-row">
+        <div class="rank">11</div>
+        <div class="artist-info">
+          <img src="Asset12210.png" alt="" class="avatar">
+          <div class="artist-name">Dotgu</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 12 -->
+       <div class="creator-row">
+        <div class="rank">12</div>
+        <div class="artist-info">
+          <img src="Asset12211.png" alt="" class="avatar">
+          <div class="artist-name">Ghiblier</div>
+        </div>
+        <div class="change">+1.72%</div>
+        <div class="nfts-sold">570</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 13 -->
+       <div class="creator-row">
+        <div class="rank">13</div>
+        <div class="artist-info">
+          <img src="profilecard2.png" alt="" class="avatar">
+          <div class="artist-name">Lindsey Lipzu</div>
+        </div>
+        <div class="change">+0.87%</div>
+        <div class="nfts-sold">420</div>
+        <div class="volume">9.6 ETH</div>
+      </div>
+
+      <!-- 14 -->
+       <div class="creator-row">
+        <div class="rank">14</div>
+        <div class="artist-info">
+          <img src="avatar3.png" alt="" class="avatar">
+          <div class="artist-name">Randy Carder</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">632</div>
+        <div class="volume">13.0 ETH</div>
+      </div>
+
+      <!-- 15 -->
+       <div class="creator-row">
+        <div class="rank">15</div>
+        <div class="artist-info">
+          <img src="Asset1222.png" alt="" class="avatar">
+          <div class="artist-name">Gravity One</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 16 -->
+       <div class="creator-row">
+        <div class="rank">16</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder1.png" alt="" class="avatar">
+          <div class="artist-name">Joselyn Wevelt</div>
+        </div>
+        <div class="change">+2.80%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">15.6 ETH</div>
+      </div>
+
+      <!-- 17 -->
+       <div class="creator-row">
+        <div class="rank">17</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder.png" alt="" class="avatar">
+          <div class="artist-name">Lydia Culhane</div>
+        </div>
+        <div class="change">+1.94%</div>
+        <div class="nfts-sold">722</div>
+        <div class="volume">14.6 ETH</div>
+      </div>
+
+      <!-- 18 -->
+       <div class="creator-row">
+        <div class="rank">18</div>
+        <div class="artist-info">
+          <img src="profilecard6.png" alt="" class="avatar">
+          <div class="artist-name">Skylar Levin</div>
+        </div>
+        <div class="change">+1.11%</div>
+        <div class="nfts-sold">580</div>
+        <div class="volume">14.0 ETH</div>
+      </div>
+
+      <!-- 19 -->
+       <div class="creator-row">
+        <div class="rank">19</div>
+        <div class="artist-info">
+          <img src="Image2.png" alt="" class="avatar">
+          <div class="artist-name">Rayna Bator</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">12.0 ETH</div>
+      </div>
+
+      <!-- 20 -->
+       <div class="creator-row">
+        <div class="rank">20</div>
+        <div class="artist-info">
+          <img src="Asset1224.png" alt="" class="avatar">
+          <div class="artist-name">Terry Dorwart</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      
+      
+    </div>
+
+    <!-- ----------------------------------------- -->
+     <!-- ------------- WEEK -------------------- -->
+    <!-- ----------------------------------------- -->
+     
+    <div id="week" class="creators-table">
+      <div class="table-header">
+        <div>#</div>
+        <div>Artist</div>
+        <div>Change</div>
+        <div>NFTs Sold</div>
+        <div>Volume</div>
+      </div>
+
+      <!-- 1 -->
+       <div class="creator-row">
+        <div class="rank">1</div>
+        <div class="artist-info">
+          <img src="Asset1227.png" alt="" class="avatar">
+          <div class="artist-name">Robotica</div>
+        </div>
+        <div class="change">+2.73%</div>
+        <div class="nfts-sold">960</div>
+        <div class="volume">16.2 ETH</div>
+      </div>
+
+      <!-- 2 -->
+       <div class="creator-row">
+        <div class="rank">1</div>
+        <div class="artist-info">
+          <img src="Asset1228.png" alt="" class="avatar">
+          <div class="artist-name">RustyRobot</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 3 -->
+       <div class="creator-row">
+        <div class="rank">3</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder.png" alt="" class="avatar">
+          <div class="artist-name">Lydia Culhane</div>
+        </div>
+        <div class="change">+1.94%</div>
+        <div class="nfts-sold">722</div>
+        <div class="volume">14.6 ETH</div>
+      </div>
+
+      <!-- 4 -->
+       <div class="creator-row">
+        <div class="rank">4</div>
+        <div class="artist-info">
+          <img src="profilecard6.png" alt="" class="avatar">
+          <div class="artist-name">Skylar Levin</div>
+        </div>
+        <div class="change">+1.11%</div>
+        <div class="nfts-sold">580</div>
+        <div class="volume">14.0 ETH</div>
+      </div>
+
+      <!-- 5 -->
+       <div class="creator-row">
+        <div class="rank">5</div>
+        <div class="artist-info">
+          <img src="profilecard2.png" alt="" class="avatar">
+          <div class="artist-name">Lindsey Lipzu</div>
+        </div>
+        <div class="change">+0.87%</div>
+        <div class="nfts-sold">420</div>
+        <div class="volume">9.6 ETH</div>
+      </div>
+
+      <!-- 6 -->
+       <div class="creator-row">
+        <div class="rank">6</div>
+        <div class="artist-info">
+          <img src="avatar3.png" alt="" class="avatar">
+          <div class="artist-name">Randy Carder</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">632</div>
+        <div class="volume">13.0 ETH</div>
+      </div>
+
+      <!-- 7 -->
+       <div class="creator-row">
+        <div class="rank">7</div>
+        <div class="artist-info">
+          <img src="Asset1222.png" alt="" class="avatar">
+          <div class="artist-name">Gravity One</div>
+        </div>
+        <div class="change">+1.56%</div>
+        <div class="nfts-sold">594</div>
+        <div class="volume">12.6 ETH</div>
+      </div>
+
+      <!-- 8 -->
+       <div class="creator-row">
+        <div class="rank">8</div>
+        <div class="artist-info">
+          <img src="Asset1223.png" alt="" class="avatar">
+          <div class="artist-name">Juanie</div>
+        </div>
+        <div class="change">+1.32%</div>
+        <div class="nfts-sold">605</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 9 -->
+       <div class="creator-row">
+        <div class="rank">9</div>
+        <div class="artist-info">
+          <img src="Asset1228.png" alt="" class="avatar">
+          <div class="artist-name">RustyRobot</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 10 -->
+       <div class="creator-row">
+        <div class="rank">10</div>
+        <div class="artist-info">
+          <img src="Asset1229.png" alt="" class="avatar">
+          <div class="artist-name">Animakid</div>
+        </div>
+        <div class="change">+3.77%</div>
+        <div class="nfts-sold">724</div>
+        <div class="volume">32.8 ETH</div>
+      </div>
+      </div>
+
+      <!-- -------------------------- -->
+    <!------------ This Month ----------->
+     <!-- --------------------------- -->
+
+    <div id="month" class="creators-table">
+      <div class="table-header">
+        <div>#</div>
+        <div>Artist</div>
+        <div>Change</div>
+        <div>NFTs Sold</div>
+        <div>Volume</div>
+      </div>
+
+      <!-- 1 -->
+       <div class="creator-row">
+        <div class="rank">1</div>
+        <div class="artist-info">
+          <img src="Image2.png" alt="" class="avatar">
+          <div class="artist-name">Rayna Bator</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">12.0 ETH</div>
+      </div>
+
+      <!-- 2 -->
+       <div class="creator-row">
+        <div class="rank">2</div>
+        <div class="artist-info">
+          <img src="Asset1224.png" alt="" class="avatar">
+          <div class="artist-name">Terry Dorwart</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 3 -->
+       <div class="creator-row">
+        <div class="rank">3</div>
+        <div class="artist-info">
+          <img src="Asset1223.png" alt="" class="avatar">
+          <div class="artist-name">Juanie</div>
+        </div>
+        <div class="change">+1.32%</div>
+        <div class="nfts-sold">605</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 4 -->
+       <div class="creator-row">
+        <div class="rank">4</div>
+        <div class="artist-info">
+          <img src="profilecard6.png" alt="" class="avatar">
+          <div class="artist-name">Skylar Levin</div>
+        </div>
+        <div class="change">+1.11%</div>
+        <div class="nfts-sold">580</div>
+        <div class="volume">14.0 ETH</div>
+      </div>
+
+      <!-- 5 -->
+       <div class="creator-row">
+        <div class="rank">5</div>
+        <div class="artist-info">
+          <img src="Asset1229.png" alt="" class="avatar">
+          <div class="artist-name">Animakid</div>
+        </div>
+        <div class="change">+3.77%</div>
+        <div class="nfts-sold">724</div>
+        <div class="volume">32.8 ETH</div>
+      </div>
+
+      <!-- 6 -->
+       <div class="creator-row">
+        <div class="rank">6</div>
+        <div class="artist-info">
+          <img src="Asset12210.png" alt="" class="avatar">
+          <div class="artist-name">Dotgu</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 7 -->
+       <div class="creator-row">
+        <div class="rank">7</div>
+        <div class="artist-info">
+          <img src="Asset12211.png" alt="" class="avatar">
+          <div class="artist-name">Ghiblier</div>
+        </div>
+        <div class="change">+1.72%</div>
+        <div class="nfts-sold">570</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 8 -->
+       <div class="creator-row">
+        <div class="rank">8</div>
+        <div class="artist-info">
+          <img src="profilecard2.png" alt="" class="avatar">
+          <div class="artist-name">Lindsey Lipzu</div>
+        </div>
+        <div class="change">+0.87%</div>
+        <div class="nfts-sold">420</div>
+        <div class="volume">9.6 ETH</div>
+      </div>
+
+     <!-- 9 -->
+      <div class="creator-row">
+        <div class="rank">9</div>
+        <div class="artist-info">
+          <img src="Asset1221.png" alt="" class="avatar">
+          <div class="artist-name">Ruben Carder</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 10 -->
+       <div class="creator-row">
+        <div class="rank">10</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder1.png" alt="" class="avatar">
+          <div class="artist-name">Joselyn Wevelt</div>
+        </div>
+        <div class="change">+2.80%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">15.6 ETH</div>
+      </div>
+
+      <!-- 11 -->
+       <div class="creator-row">
+        <div class="rank">11</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder.png" alt="" class="avatar">
+          <div class="artist-name">Lydia Culhane</div>
+        </div>
+        <div class="change">+1.94%</div>
+        <div class="nfts-sold">722</div>
+        <div class="volume">14.6 ETH</div>
+      </div>
+
+      <!-- 12 -->
+       <div class="creator-row">
+        <div class="rank">12</div>
+        <div class="artist-info">
+          <img src="Asset1223.png" alt="" class="avatar">
+          <div class="artist-name">Juanie</div>
+        </div>
+        <div class="change">+1.32%</div>
+        <div class="nfts-sold">605</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 13 -->
+       <div class="creator-row">
+        <div class="rank">13</div>
+        <div class="artist-info">
+          <img src="Asset1224.png" alt="" class="avatar">
+          <div class="artist-name">BlueWhale</div>
+        </div>
+        <div class="change">+0.96%</div>
+        <div class="nfts-sold">723</div>
+        <div class="volume">15.7 ETH</div>
+      </div>
+
+      <!-- 14 -->
+       <div class="creator-row">
+        <div class="rank">14</div>
+        <div class="artist-info">
+          <img src="avatar3.png" alt="" class="avatar">
+          <div class="artist-name">Randy Carder</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">632</div>
+        <div class="volume">13.0 ETH</div>
+      </div>
+
+      <!-- 15 -->
+       <div class="creator-row">
+        <div class="rank">15</div>
+        <div class="artist-info">
+          <img src="Asset1222.png" alt="" class="avatar">
+          <div class="artist-name">Gravity One</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+    <!------------------ All Time ---------------------->
+    <!-- -------------------------------------------- -->
+    <div id="alltime" class="creators-table">
+      <div class="table-header">
+        <div>#</div>
+        <div>Artist</div>
+        <div>Change</div>
+        <div>NFTs Sold</div>
+        <div>Volume</div>
+      </div>
+
+      <!-- 1-->
+       <div class="creator-row">
+        <div class="rank">1</div>
+        <div class="artist-info">
+          <img src="Asset1229.png" alt="" class="avatar">
+          <div class="artist-name">Animakid</div>
+        </div>
+        <div class="change">+3.77%</div>
+        <div class="nfts-sold">724</div>
+        <div class="volume">32.8 ETH</div>
+      </div>
+
+      <!-- 2 -->
+       <div class="creator-row">
+        <div class="rank">2</div>
+        <div class="artist-info">
+          <img src="Asset1223.png" alt="" class="avatar">
+          <div class="artist-name">Juanie</div>
+        </div>
+        <div class="change">+1.32%</div>
+        <div class="nfts-sold">605</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 3 -->
+       <div class="creator-row">
+        <div class="rank">3</div>
+        <div class="artist-info">
+          <img src="Asset1224.png" alt="" class="avatar">
+          <div class="artist-name">BlueWhale</div>
+        </div>
+        <div class="change">+0.96%</div>
+        <div class="nfts-sold">723</div>
+        <div class="volume">15.7 ETH</div>
+      </div>
+
+      <!-- 4 -->
+       <div class="creator-row">
+        <div class="rank">4</div>
+        <div class="artist-info">
+          <img src="Asset1226.png" alt="" class="avatar">
+          <div class="artist-name">Shroomie</div>
+        </div>
+        <div class="change">+1.69%</div>
+        <div class="nfts-sold">660</div>
+        <div class="volume">13.4 ETH</div>
+      </div>
+      
+
+      <!-- 5 -->
+      <div class="creator-row">
+        <div class="rank">5</div>
+        <div class="artist-info">
+          <img src="Asset122.png" alt="" class="avatar">
+          <div class="artist-name">Jaydon Ekstrom</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 6 -->
+      <div class="creator-row">
+        <div class="rank">6</div>
+        <div class="artist-info">
+          <img src="Asset1221.png" alt="" class="avatar">
+          <div class="artist-name">Ruben Carder</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 7 -->
+       <div class="creator-row">
+        <div class="rank">7</div>
+        <div class="artist-info">
+          <img src="Asset1222.png" alt="" class="avatar">
+          <div class="artist-name">Gravity One</div>
+        </div>
+        <div class="change">+1.56%</div>
+        <div class="nfts-sold">594</div>
+        <div class="volume">12.6 ETH</div>
+      </div>
+
+      <!-- 8 -->
+       <div class="creator-row">
+        <div class="rank">8</div>
+        <div class="artist-info">
+          <img src="avatar3.png" alt="" class="avatar">
+          <div class="artist-name">Randy Carder</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">632</div>
+        <div class="volume">13.0 ETH</div>
+      </div>
+
+      <!-- 9 -->
+       <div class="creator-row">
+        <div class="rank">9</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder.png" alt="" class="avatar">
+          <div class="artist-name">Lydia Culhane</div>
+        </div>
+        <div class="change">+1.94%</div>
+        <div class="nfts-sold">722</div>
+        <div class="volume">14.6 ETH</div>
+      </div>
+
+      <!-- 10 -->
+       <div class="creator-row">
+        <div class="rank">10</div>
+        <div class="artist-info">
+          <img src="profilecard6.png" alt="" class="avatar">
+          <div class="artist-name">Skylar Levin</div>
+        </div>
+        <div class="change">+1.11%</div>
+        <div class="nfts-sold">580</div>
+        <div class="volume">14.0 ETH</div>
+      </div>
+
+      <!-- 11 -->
+       <div class="creator-row">
+        <div class="rank">11</div>
+        <div class="artist-info">
+          <img src="Image2.png" alt="" class="avatar">
+          <div class="artist-name">Rayna Bator</div>
+        </div>
+        <div class="change">+1.52%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">12.0 ETH</div>
+      </div>
+
+       <!-- 12 -->
+       <div class="creator-row">
+        <div class="rank">12</div>
+        <div class="artist-info">
+          <img src="Asset12210.png" alt="" class="avatar">
+          <div class="artist-name">Dotgu</div>
+        </div>
+        <div class="change">+1.41%</div>
+        <div class="nfts-sold">602</div>
+        <div class="volume">12.4 ETH</div>
+      </div>
+
+      <!-- 13 -->
+       <div class="creator-row">
+        <div class="rank">13</div>
+        <div class="artist-info">
+          <img src="Asset12211.png" alt="" class="avatar">
+          <div class="artist-name">Ghiblier</div>
+        </div>
+        <div class="change">+1.72%</div>
+        <div class="nfts-sold">570</div>
+        <div class="volume">13.2 ETH</div>
+      </div>
+
+      <!-- 14 -->
+       <div class="creator-row">
+        <div class="rank">14</div>
+        <div class="artist-info">
+          <img src="profilecard2.png" alt="" class="avatar">
+          <div class="artist-name">Lindsey Lipzu</div>
+        </div>
+        <div class="change">+0.87%</div>
+        <div class="nfts-sold">420</div>
+        <div class="volume">9.6 ETH</div>
+      </div>
+
+      <!-- 15 -->
+       <div class="creator-row">
+        <div class="rank">15</div>
+        <div class="artist-info">
+          <img src="secondaryphotoplaceholder1.png" alt="" class="avatar">
+          <div class="artist-name">Joselyn Wevelt</div>
+        </div>
+        <div class="change">+2.80%</div>
+        <div class="nfts-sold">674</div>
+        <div class="volume">15.6 ETH</div>
+      </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col logo-col">
+          <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>NFT Marketplace</span>
+          </div>
+          <p>NFT marketplace UI created with Anima for Figma.</p>
+          <h4>Join our community</h4>
+          <div class="social-icons">
+            <a href="https://discord.com/channels/@xurshid110"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@computerhacks71"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/Xurshidbek_07"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_xurshidbek_off/?next=%2F&hl=en"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="wallet.html">Connect a wallet</a></li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter-col">
+          <h3>Join Our Weekly Digest</h3>
+          <p>Get exclusive promotions & updates straight to your inbox.</p>
+          <form>
+            <input type="email" placeholder="Enter your email here" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© NFT Market. Use this template freely.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').style.display = 'flex';
+    }
+    function closeMobileMenu(e) {
+      if (e.target === document.getElementById('mobileMenu')) {
+        document.getElementById('mobileMenu').style.display = 'none';
+      }
+    }
+
+   // Tablar almashtirish
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.creators-table').forEach(table => {
+      table.classList.remove('active');
+      if (table.id === tab) table.classList.add('active');
+    });
+  });
+});
+  </script>
+</body>
+</html>
